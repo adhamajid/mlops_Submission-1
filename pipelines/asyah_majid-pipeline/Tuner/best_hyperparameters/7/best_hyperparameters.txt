@@ -1,0 +1,1 @@
+{"space": [{"class_name": "Int", "config": {"name": "hidden_layers", "default": 3, "conditions": [], "min_value": 1, "max_value": 5, "step": 1, "sampling": "linear"}}], "values": {"hidden_layers": 1}}

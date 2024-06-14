@@ -1,0 +1,52 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "Product"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "SparseCategoricalCrossentropy"
+          },
+          {
+            "className": "Precision",
+            "config": "{\"top_k\": 1}"
+          },
+          {
+            "className": "Recall",
+            "config": "{\"top_k\": 1}"
+          },
+          {
+            "className": "MultiClassConfusionMatrixPlot"
+          },
+          {
+            "className": "SparseCategoricalAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.46.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "pipelines/asyah_majid-pipeline/Trainer/model/8/Format-Serving"
+  }
+}
